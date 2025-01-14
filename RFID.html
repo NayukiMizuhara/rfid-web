@@ -7,7 +7,7 @@
     <script>
         async function fetchRFID() {
             try {
-                const response = await fetch('http://192.168.1.100/read_rfid'); // Ganti dengan IP ESP32 Anda
+                const response = await fetch('http://192.168.100.10/read_rfid'); 
                 if (!response.ok) {
                     throw new Error('Failed to fetch RFID data');
                 }
